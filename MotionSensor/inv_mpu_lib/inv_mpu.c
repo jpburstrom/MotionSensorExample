@@ -505,8 +505,7 @@ const struct gyro_reg_s reg =
 	.mem_start_addr = 0x6E,
 	.prgm_start_h   = 0x70
 #ifdef AK89xx_SECONDARY
-	,.raw_compass   = 0x49,
-	.s0_addr        = 0x25,
+	,.s0_addr        = 0x25,
 	.s0_reg         = 0x26,
 	.s0_ctrl        = 0x27,
 	.s1_addr        = 0x28,
@@ -515,7 +514,9 @@ const struct gyro_reg_s reg =
 	.s4_ctrl        = 0x34,
 	.s0_do          = 0x63,
 	.s1_do          = 0x64,
-	.i2c_delay_ctrl = 0x67
+	.i2c_delay_ctrl = 0x67,
+	.raw_compass   = 0x49,
+	.yg_offs_tc     = 0x01
 #endif
 };
 const struct hw_s hw =
